@@ -2,3 +2,6 @@ fitz
 A4
 canvas
 io
+streamlit
+PyMuPDF
+reportlab
