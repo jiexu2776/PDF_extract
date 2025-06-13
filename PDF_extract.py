@@ -5,8 +5,8 @@ from reportlab.pdfgen import canvas
 import io
 
 # Function to extract 12px text from a PDF
-def extract_12px_text_from_pdf(pdf_path):
-    doc = fitz.open(pdf_path)
+def extract_12px_text_from_pdf(uploaded_pdf):
+    doc = fitz.open(stream=uploaded_pdf.read(), filetype="pdf")  # Open PDF from BytesIO stream
     text_blocks = []
 
     for page in doc:
