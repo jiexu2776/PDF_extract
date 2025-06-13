@@ -1,5 +1,4 @@
-pandas
-matplotlib
-numpy
-statistics
-scipy
+fitz
+A4
+canvas
+io
